@@ -1,0 +1,18 @@
+{
+    "name": "eugenevdm/network",
+    "description": "A basic networking library.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eugene van der Merwe",
+            "email": "eugenevdm@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Network\\": "src\\Network\\"
+        }
+    },
+    "minimum-stability": "stable"
+}
