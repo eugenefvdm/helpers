@@ -5,5 +5,5 @@ require_once __DIR__ . '/../vendor/autoload.php'; // Autoload files using Compos
 use Helpers\Config;
 
 $config = Config::Config('sample');
-//die("test");
-print_r($config,1);
+
+var_dump($config);

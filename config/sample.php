@@ -2,8 +2,8 @@
 
 return [
 
-    'host' => 'dte.snowball.co.za',
-    'username' => 'root',
-    'password' => 'QWad2$CPad1$',
+    'host' => 'www.google.com',
+    'username' => 'bill',
+    'password' => 'gates',
 
 ];
