@@ -1,6 +1,8 @@
 # helpers
 
-# Usage
+## Load Config Values
+
+### Setup
 
 * Create folder off \ called config
 * Create file called "config.php", e.g. ssh.php
@@ -20,4 +22,11 @@ Make sure you have a .gitignore file something like:
 .gitignore
 .idea/
 vendor/
+config/ <-- Make sure you have this entry!
+```
+
+### Usage
+
+```php
+$config = \Helpers\Helpers::Config('ssh');
 ```
