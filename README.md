@@ -9,9 +9,9 @@
 
 ```php
 return [
-    'host' => 'mysecret.host.com',
-    'username' => 'root_username',
-    'password' => 'root_password',
+    'host' => 'host.domain.com',
+    'username' => 'username',
+    'password' => 'password',
 ];
 ```
 

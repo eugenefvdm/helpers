@@ -11,4 +11,16 @@ class Helpers
         return eval($file);
     }
 
+    public static function file_str_replace($search, $replace, $file) {
+        $command = "sed -i -e 's/$search/$replace/g' $file";
+        self::root_command($command);
+
+    }
+
+    public static function root_command($command) {
+        $ssh_config = self::Config('ssh');
+        $exec = "echo {$ssh_config['password']} | /usr/bin/sudo -S $command";
+        exec($exec, $out, $rcode);
+    }
+
 }

@@ -2,3 +2,4 @@
 .gitignore
 .idea/
 vendor/
+config/ssh.php
