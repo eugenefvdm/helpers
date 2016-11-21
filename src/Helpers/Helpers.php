@@ -21,6 +21,7 @@ class Helpers
         $ssh_config = self::Config('ssh');
         $exec = "echo {$ssh_config['password']} | /usr/bin/sudo -S $command";
         exec($exec, $out, $rcode);
+        return $out;
     }
 
 }
