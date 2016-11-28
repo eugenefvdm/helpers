@@ -2,6 +2,8 @@
 
 namespace Helpers;
 
+use DateTime;
+
 class Helpers
 {
 
@@ -10,6 +12,11 @@ class Helpers
         // $filename = __DIR__ . "/../../config/" . $values . '.php';
         $file = file_get_contents( $filename );
         return eval($file);
+    }
+
+    public static function date_normalize($date) {
+        $normalized_date = new DateTime($date);
+        return $normalized_date->format('Y-m-d H:i:s');
     }
 
     public static function file_str_replace($search, $replace, $file) {
